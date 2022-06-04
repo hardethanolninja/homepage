@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "pages", "react_home")));
 app.use(express.static(path.join(__dirname, "pages", "instagram_clone")));
+app.use(express.static(path.join(__dirname, "pages", "lawn_service")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);

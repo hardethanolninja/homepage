@@ -10,4 +10,8 @@ router.get("/insta-clone", function (req, res, next) {
   res.sendFile(path.resolve(__dirname, "../pages/instagram_clone/index.html"));
 });
 
+router.get("/lawn-service", function (req, res, next) {
+  res.sendFile(path.resolve(__dirname, "../pages/lawn_service/index.html"));
+});
+
 module.exports = router;
